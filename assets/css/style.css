@@ -82,7 +82,9 @@ button {
 }
   
 input,
-/* select { width: 100%; } */
+select { 
+    border: 1px solid var(--black);
+}
   
 button { cursor: pointer; }
   
@@ -259,7 +261,8 @@ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 
 @media screen and (max-width:567px) {
     .hero__description{
-        padding: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .hero__title{
         font-size: 1.5rem;
@@ -274,14 +277,15 @@ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 }
 
 
+
 .green{
     color: var(--green-pigment);
 }
 
 .hero__inputField{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    justify-content: space-between;
     column-gap: 3rem;
     padding: 2rem 3rem;
     width: 80%;
@@ -294,8 +298,6 @@ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid var(--gainsboro);
-    padding: 10px;
 }
 
 .form__tab .tab{
@@ -372,6 +374,41 @@ select:focus{
 }
 
 /* media queries for smaller screen */
-@media screen  and (max-wdth:768px){
-    
+@media screen and (max-width:920px){
+    .hero__inputField{
+        grid-template-columns: repeat(2, 1fr) !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input, 
+    select,
+    option,
+    button{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero__inputField{
+        grid-template-columns: repeat(1, 1fr) !important;
+        align-items: center;
+        justify-content: center;
+        margin: -2rem auto 0;
+    }
+
+    .btn-search{
+        /* padding: 0px !important; */
+    }
+
+    input, 
+    select,
+    option,
+    button{
+        width: 100%;
+    }
+
+    label{
+        padding-top: 1rem;
+    }
 }
