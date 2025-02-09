@@ -109,9 +109,10 @@ body {
   \*-----------------------------------*/
   
 .container{
-    max-width: 968px;
+    max-width: 1024px;
     margin-right: 1.5rem;
     margin-left:1.5rem;
+    margin-inline:auto ;
 }
 
 
@@ -132,6 +133,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--white);
 }
 
 .nav__item{
@@ -156,6 +158,10 @@ header{
     font-weight: var(--fw-600);
 }
 
+.logo span{
+    color: var(--green-pigment);
+}
+
 .toggle{
     display: none;
 }
@@ -171,7 +177,7 @@ header{
     }
 
     .toggle i{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     
     
@@ -200,4 +206,9 @@ header{
 
 .none{
     display: none !important;
+}
+
+.nav__list{
+    display: flex;
+    column-gap: 2rem;
 }
