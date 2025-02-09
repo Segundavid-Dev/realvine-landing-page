@@ -28,3 +28,14 @@ function showMenuList(){
 }
 
 showMenuList()
+
+
+// change tab 
+const tab = document.querySelectorAll(".tab")
+const activeTab = document.querySelector(".active")
+
+tab.forEach(t => {
+    t.addEventListener("click", ()=>{
+        t.classList.add('active')        
+    })
+})

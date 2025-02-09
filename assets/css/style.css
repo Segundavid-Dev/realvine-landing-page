@@ -374,14 +374,14 @@ select:focus{
 }
 
 /* media queries for smaller screen */
-@media screen and (max-width:920px){
+@media screen and (max-width:1170px){
     .hero__inputField{
         grid-template-columns: repeat(2, 1fr) !important;
         align-items: center;
         justify-content: center;
     }
 
-    input, 
+    input,
     select,
     option,
     button{
@@ -389,16 +389,12 @@ select:focus{
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 718px) {
     .hero__inputField{
         grid-template-columns: repeat(1, 1fr) !important;
         align-items: center;
         justify-content: center;
         margin: -2rem auto 0;
-    }
-
-    .btn-search{
-        /* padding: 0px !important; */
     }
 
     input, 
