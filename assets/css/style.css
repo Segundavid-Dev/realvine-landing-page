@@ -59,64 +59,64 @@
     --transition: 0.25s ease;
     --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
   
-  }
+}
   
-  *,
-  *::before,
-  *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
   
-  li {
+li {
      list-style: none; 
-  }
+}
   
-  a {
+a{
     text-decoration: none;
     color: inherit;
-  }
+}
   
-  a,
-  img,
-  span,
-  label,
-  input,
-  select,
-  button,
-  ion-icon { display: block; }
+a,
+img,
+span,
+label,
+input,
+select,
+button,
+ion-icon { display: block; }
   
-  img { height: auto; }
+img { height: auto; }
   
-  input,
-  select,
-  button {
+input,
+select,
+button {
     background: none;
     border: none;
     font: inherit;
-  }
+}
   
-  input,
-  select { width: 100%; }
+input,
+select { width: 100%; }
   
-  button { cursor: pointer; }
+button { cursor: pointer; }
   
-  ion-icon { pointer-events: none; }
+ion-icon { pointer-events: none; }
   
-  address { font-style: normal; }
+address { font-style: normal; }
   
-  html {
+html {
     font-family: var(--ff-spartan);
     font-size: 10px;
     scroll-behavior: smooth;
-  }
+}
   
-  body {
+body {
     background-color: var(--white);
     font-size: var(--fs-5);
     color: var(--cadet-gray);
-  }
+}
   
   
   
@@ -126,54 +126,54 @@
     #REUSED STYLE
   \*-----------------------------------*/
   
-  .container { padding-inline: 15px; }
+.container { padding-inline: 15px; }
   
-  .btn {
+.btn {
     background-color: var(--green-pigment);
     color: var(--white);
     font-weight: var(--fw-500);
     max-width: max-content;
     padding: var(--padding, 12px 28px);
-  }
+}
   
-  .btn:is(:hover, :focus) { background-color: var(--sea-green); }
+.btn:is(:hover, :focus) { background-color: var(--sea-green); }
   
-  .btn-secondary { border-radius: 50px; }
+.btn-secondary { border-radius: 50px; }
   
-  .btn-primary { border-radius: var(--radius-6); }
+.btn-primary { border-radius: var(--radius-6); }
   
-  .h1 { font-size: var(--fs-1); }
+.h1 { font-size: var(--fs-1); }
   
-  .h2,
-  .h3 {
+.h2,
+.h3 {
     color: var(--oxford-blue);
     line-height: 1.5;
-  }
+}
   
-  .h2 {
+.h2 {
     font-size: var(--fs-2);
     font-weight: var(--fw-500);
-  }
+}
   
-  .h3 {
+.h3 {
     font-size: var(--fs-3);
     font-weight: var(--fw-500);
-  }
+}
   
-  .section { padding-block: var(--section-padding); }
+.section { padding-block: var(--section-padding); }
   
-  .img-holder {
+.img-holder {
     aspect-ratio: var(--width) / var(--height);
     background-color: var(--gainsboro);
-  }
+}
   
-  .img-cover {
+.img-cover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
   
-  .section-title { color: var(--oxford-blue); }
+.section-title { color: var(--oxford-blue); }
   
-  .section-text { line-height: 1.6; }
+.section-text { line-height: 1.6; }
   
