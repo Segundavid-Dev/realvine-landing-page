@@ -1,1 +1,1 @@
-"sue strict";
+"use strict";
