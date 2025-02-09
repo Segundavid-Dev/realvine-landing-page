@@ -36,6 +36,19 @@ const activeTab = document.querySelector(".active")
 
 tab.forEach(t => {
     t.addEventListener("click", ()=>{
-        t.classList.add('active')        
+        // t.classList.add('active')   
+        if(t === tab[1]){
+            tab[0].classList.remove('active')
+            tab[2].classList.remove('active')
+            tab[1].classList.add('active')
+        } else if (t === tab[2]){
+            tab[0].classList.remove('active')
+            tab[1].classList.remove('active')
+            tab[2].classList.add('active')
+        } else {
+            tab[1].classList.remove('active')
+            tab[2].classList.remove('active')
+            tab[0].classList.add('active')
+        }
     })
 })
