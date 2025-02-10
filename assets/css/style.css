@@ -394,7 +394,8 @@ select:focus{
         grid-template-columns: repeat(1, 1fr) !important;
         align-items: center;
         justify-content: center;
-        margin: -2rem auto 0;
+        width: 90%;
+        margin: -7em auto 0;
     }
 
     input, 
