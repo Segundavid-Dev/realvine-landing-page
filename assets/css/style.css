@@ -522,7 +522,7 @@ select:focus{
 
     .about__title{
         width: 100%;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         padding-bottom: 10px;
     }
 }
@@ -594,6 +594,10 @@ select:focus{
     .works__description{
         width: 60%;
         margin: 0 auto;
+    }
+
+    .works__title{
+        font-size: 1.5rem;
     }
 }
 
@@ -701,6 +705,10 @@ select:focus{
         width: 60%;
         margin: 0 auto;
     }
+
+    .features__title{
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width:718px){
@@ -738,6 +746,7 @@ select:focus{
 /* questions */
 .questions{
     text-align: center;
+    margin-bottom: 3rem;
 }
 
 .questions__title{
@@ -757,9 +766,68 @@ select:focus{
     vertical-align: middle;
 }
 
+
+@media screen and (max-width:834px){
+    .questions__title{
+        font-size: 1.5rem;
+    }
+
+    .question__description{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
 @media screen and (max-width:718px){
     .question__description{
         width: 90%;
         margin: 0 auto;
     }
+}
+
+/* newletter */
+.newsletter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin:0 auto ;
+    box-shadow: var(--shadow-3);
+    padding: 2rem;
+    border-radius: var(--radius-16);
+}
+
+.newsletter__title{
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+.newsletter__description{
+    color: var(--cadet-gray);
+    font-size: 14px;
+}
+
+.newsletter-input{
+    border: 1px solid var(--cadet-gray);
+    outline: none;
+    border-radius: 50px;
+    padding-top: 1rem !important;
+    padding-bottom:1rem !important;
+    padding-right: 15rem !important;
+}
+
+.newsletter__form{
+    position: relative;
+}
+
+#btn-subscribe{
+    outline: none;
+    border: none;
+    background: var(--green-pigment);
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 50px;
+    position: absolute;
+    right: 3px;
+    bottom: 2px;
 }
