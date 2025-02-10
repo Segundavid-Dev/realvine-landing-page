@@ -152,6 +152,7 @@ header{
     background: var(--sea-green);
     color: var(--white);
     display: block;
+    border-radius: 50px;
 }
 
 
@@ -242,6 +243,7 @@ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     background-size: cover;
     background-position: center center;
     height: 85vh;
+    border-radius: var(--radius-16);
 }
 
 .hero__title{
@@ -296,6 +298,7 @@ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     margin: -5rem auto 0;
     background-color: var(--white);
     box-shadow: var(--shadow-2);
+    border-radius: var(--radius-12);
 }
 
 .search__input .form__tab{
@@ -313,6 +316,7 @@ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 .btn-search{
     display: block;
     margin-top: 1rem;
+    border-radius: var(--radius-12);
 }
 
 .hero__inputField label{
@@ -372,6 +376,7 @@ input::placeholder{
     background: var(--green-pigment);
     padding: 8px 20px;
     color: var(--white);
+    border-radius: var(--radius-12);
 }
 
 select,
@@ -491,6 +496,7 @@ select:focus{
     background: var(--green-pigment);
     padding: 15px 40px;
     font-size: 14px;
+    border-radius: var(--radius-12);
 }
 
 /* media queries for about */
