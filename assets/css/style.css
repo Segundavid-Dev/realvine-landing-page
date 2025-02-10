@@ -353,6 +353,13 @@ input{
     font-size: 13px;
 }
 
+
+select{
+    background: var(--white);
+    outline: none;
+    border: 1px solid var(--black);       
+}
+
 input::placeholder{
     font-size: 13px;
 }
@@ -404,6 +411,7 @@ select:focus{
     button{
         width: 100%;
     }
+
 
     label{
         padding-top: 1rem;
