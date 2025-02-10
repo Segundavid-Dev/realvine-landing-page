@@ -65,6 +65,10 @@
 li {
      list-style: none; 
 }
+
+i{
+    vertical-align: middle;
+}
   
 a{
     text-decoration:  none;
@@ -484,7 +488,7 @@ select:focus{
 
 .btn-learn{
     color: var(--white);
-    background: green;
+    background: var(--green-pigment);
     padding: 15px 40px;
     font-size: 14px;
 }
@@ -726,6 +730,35 @@ select:focus{
     }
 
     .features__description{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* questions */
+.questions{
+    text-align: center;
+}
+
+.questions__title{
+    font-size: 1.7rem;
+}
+
+.question__description{
+    width: 45%;
+    margin: 0 auto;
+    color: var(--cadet-gray);
+    font-size: 14px;
+    padding: 1rem 0 2rem;
+}
+
+.bxs-phone{
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+@media screen and (max-width:718px){
+    .question__description{
         width: 90%;
         margin: 0 auto;
     }
