@@ -142,7 +142,6 @@ Rating
 <ion-icon name="star"></ion-icon>
 5.0(30)
 
-59345 STONEWALL DR, Plaquemine, LA 70764, USA
 
 3723 SANDBAR DR, Addis, LA 70710, USA
 

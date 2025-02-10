@@ -525,11 +525,14 @@ select:focus{
 
 
 /* works */
-.works{
+.works,
+.features__title,
+.features__description{
     text-align: center;
 }
 
-.works__title{
+.works__title,
+.features__title{
     padding-bottom: 1rem;
     font-size: 1.7rem;
 }
@@ -540,7 +543,8 @@ select:focus{
     font-size: 14px;
 }
 
-.works__description{
+.works__description,
+.features__description{
     width: 40%;
     margin: 0 auto;
 }
@@ -582,6 +586,11 @@ select:focus{
     .works__card{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .works__description{
+        width: 60%;
+        margin: 0 auto;
+    }
 }
 
 
@@ -593,5 +602,126 @@ select:focus{
 
     .works__card{
         grid-template-columns: 1fr;
+    }
+}
+
+
+/* features */
+.features__description{
+    color: var(--cadet-gray);
+    font-size: 14px;
+    padding-bottom: 2rem;
+}
+
+.features__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+
+.feature__card{
+    background: var(--white);
+    border-left: 1px solid var(--cadet-gray);
+    border-right: 1px solid var(--cadet-gray);
+    border-bottom: 1px solid var(--cadet-gray);
+    border-radius: var(--radius-16);
+}
+
+.feature__card-img{
+    width: 300px;
+}
+
+
+.feature__card img{
+    width: 100%;
+    display: block;
+    border-top-left-radius: var(--radius-12);
+    border-top-right-radius: var(--radius-12);
+}
+
+.property-infos{
+    padding: 1rem;
+}
+
+.property-link{
+    display: block;
+    color: var(--black);
+    text-align: center;
+    transition: .4s;
+    border-bottom: 1px solid var(--light-gray);
+    padding: .5rem;
+    text-align: left !important;
+}
+
+.property-link:hover{
+    color: var(--green-pigment);
+}
+
+.proprety__infos-list,
+.meta{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 1rem .5rem;
+    gap: 10px;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.meta{
+    border-bottom: none;
+}
+
+
+.propery__info i{
+    font-size: 1.4rem;
+    color: var(--green-pigment);
+}
+
+.meta-price span,
+.meta-rating span{
+    color: var(--cadet-gray);
+}
+
+.meta i{
+    color: var(--mango);
+}
+
+
+@media screen and (max-width:834px){
+    .features__cards{
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .features__description{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:718px){
+    .features__cards{
+        grid-template-columns: 1fr;
+    }
+
+
+
+    .feature__card-img{
+        width:30px;
+    }
+
+    .property-infos{
+        padding: .5rem;
+    }
+    
+    .proprety__infos-list,
+    .meta{
+        padding: .7rem;
+    }
+
+    .property-link,
+    .propery__info,
+    .meta{
+        font-size:14px ;
     }
 }
