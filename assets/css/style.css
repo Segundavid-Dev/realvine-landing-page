@@ -386,6 +386,9 @@ select:focus{
         grid-template-columns: repeat(2, 1fr) !important;
         align-items: center;
         justify-content: center;
+        width: 90%;
+        margin: -7em auto 0;
+        row-gap: 1rem;
     }
 
     input,
@@ -401,8 +404,7 @@ select:focus{
         grid-template-columns: repeat(1, 1fr) !important;
         align-items: center;
         justify-content: center;
-        width: 90%;
-        margin: -7em auto 0;
+        row-gap: 0;
     }
 
     input, 
