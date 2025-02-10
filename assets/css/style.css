@@ -805,6 +805,7 @@ select:focus{
     z-index: 10000;
     margin-bottom: -30px;
     background-color: var(--white);
+    gap: 2rem;
 }
 
 .newsletter__title{
@@ -824,6 +825,7 @@ select:focus{
     padding-top: 1rem !important;
     padding-bottom:1rem !important;
     padding-right: 15rem !important;
+    width: 100% !important;
 }
 
 .newsletter__form{
@@ -840,6 +842,10 @@ select:focus{
     position: absolute;
     right: 3px;
     bottom: 2px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -923,4 +929,61 @@ select:focus{
 .social-link:hover{
     background: var(--green-pigment);
     color: var(--white);
+}
+
+@media screen and (max-width:834px){
+    .newsletter{
+        width: 90%;
+        margin-bottom: -5rem;
+     
+    }
+    .newsletter__title{
+        font-size: 1.4rem;
+    }
+
+    .footer__container{
+        margin-top: 50px;
+        padding-bottom: 3rem;
+    }
+
+    .newsletter__description{
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width:718px){
+    .newsletter{
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+        gap: 0;
+        padding-block: 3rem;
+        margin-bottom: -8rem;
+    }
+
+    .footer__container{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    
+    .footer__logo p{
+        font-size: 14px;
+        color: var(--light-gray);
+        width: 90%;
+    }
+
+    .contact__details{
+        width: 60%;
+    }
+
+    .footer__bottom{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    .social__media-links{
+        padding: 1rem;
+    }
 }
