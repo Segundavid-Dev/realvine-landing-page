@@ -445,8 +445,8 @@ select:focus{
     width: 100%;
 }
 .about__title{
-    font-size: 1.5rem;
-    width: 60%;
+    font-size: 1.7rem;
+    width: 50%;
     padding-bottom: 1rem;
 }
 
@@ -527,4 +527,71 @@ select:focus{
 /* works */
 .works{
     text-align: center;
+}
+
+.works__title{
+    padding-bottom: 1rem;
+    font-size: 1.7rem;
+}
+
+
+.works p{
+    color: var(--cadet-gray);
+    font-size: 14px;
+}
+
+.works__description{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.works__card{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.works__card-title{
+    font-weight:  var(--fw-500);
+}
+
+.work__card-title{
+    padding: 1rem 0;
+}
+
+.work__card-data{
+    width: 75%;
+    margin: 0 auto;
+    line-height: 2;
+}
+
+.bx-home,
+.bx-box,
+.bx-key{
+    color: var(--green-pigment);
+    font-size: 2rem;
+    background: var(--mint-cream);
+    padding: 35px;
+    border-radius: 50%;
+}
+
+
+
+@media screen and (max-width:834px) {
+    .works__card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (max-width:718px){
+    .works__description{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .works__card{
+        grid-template-columns: 1fr;
+    }
 }
