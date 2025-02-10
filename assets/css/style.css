@@ -266,12 +266,16 @@ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 
 
 @media screen and (max-width:567px) {
+    .hero__bg{
+        height: 60vh;
+    }
     .hero__description{
         padding-left: 1rem;
         padding-right: 1rem;
+        top: 30%;
     }
     .hero__title{
-        font-size: 1.5rem;
+        font-size: 2rem;
         width: 90%;
         text-align: center;
     }
@@ -279,6 +283,10 @@ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     .hero__data{
         width: 90%;
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
     }
 }
 
@@ -304,7 +312,7 @@ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 .search__input .form__tab{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 2rem;
 }
 
 .form__tab .tab{
@@ -315,7 +323,7 @@ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 
 .btn-search{
     display: block;
-    margin-top: 1rem;
+    margin-top: 14px;
     border-radius: var(--radius-12);
 }
 
@@ -343,9 +351,9 @@ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 
 .search__icon{
     position: absolute; 
-    left: 5px;
+    left: 15px;
     font-size: 1.3rem;
-    top: 10px;
+    top: 20px;
 }
 
 .search__input p{
@@ -356,7 +364,7 @@ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 }
 
 input{
-    padding: 10px 30px;
+    padding: 20px 40px;
     font-family: var(--body-font);
     font-size: 13px;
 }
@@ -365,7 +373,7 @@ input{
 select{
     background: var(--white);
     outline: none;
-    border: 1px solid var(--black);       
+    border: 1px solid var(--black);     
 }
 
 input::placeholder{
@@ -382,14 +390,14 @@ input::placeholder{
 select,
 option{
     /* top | left and right | bottom */
-padding: 10px 80px 10px 5px;
+padding: 15px 80px 15px 10px;
 }
 
 select:focus{
     border: 1px solid var(--green-pigment);
 }
 
-/* media queries for smaller screen */
+/* media queries*/
 @media screen and (max-width:1170px){
     .hero__inputField{
         grid-template-columns: repeat(2, 1fr) !important;
@@ -408,11 +416,7 @@ select:focus{
     }
 }
 
-@media screen  and (max-width:350px){
-    .hero__inputField{
-        margin: -3rem auto 0;
-    }
-}
+
 
 @media screen and (max-width: 718px) {
     .hero__inputField{
@@ -434,7 +438,74 @@ select:focus{
     label{
         padding-top: 1rem;
     }
+    .search__input .form__tab{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    .btn-search{
+        font-size: 14px;
+    }
+
+    
+    .hero__bg{
+        height: 70vh;
+    }
+
+    .hero__description{
+        top: 30%;
+    }
+
+    .hero__title{
+        font-size: 2.5rem;
+        width: 90%;
+    }
+
+    .hero__data{
+        width: 70%;
+    }
+    
 }
+
+@media screen and (max-width:567px){
+    .hero__bg{
+        height: 60vh;
+    }
+    .hero__title{
+        font-size: 1.75rem;
+    }
+
+    .hero__data{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width:430px){
+    .hero__inputField{
+        margin: -4em auto 0;
+    }
+}
+
+@media screen and (max-width:380px){
+    .hero__inputField{
+        margin: -4em auto 0;
+    }
+
+    .hero__title {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen  and (max-width:350px){
+    .hero__inputField{
+        margin: -1.5rem auto 0;
+    }
+}
+
 
 
 .grid{
@@ -447,6 +518,10 @@ select:focus{
 
 .about__img{
     border-radius: var(--radius-16);
+}
+
+
+.about__img__container img{
     width: 400px;
 }
 
@@ -985,5 +1060,14 @@ select:focus{
 
     .social__media-links{
         padding: 1rem;
+    }
+}
+
+
+/* final media query */
+@media screen and (min-width:1120px){
+    .container{
+        max-width: 1100px;
+        margin: 0 auto;
     }
 }
