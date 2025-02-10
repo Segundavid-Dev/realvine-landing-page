@@ -241,7 +241,7 @@ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 }
 
 .hero__title{
-    font-size: 3rem;
+    font-size: 3rem; 
     width: 60%;
     padding-bottom: 1rem;
 }
@@ -399,12 +399,19 @@ select:focus{
     }
 }
 
+@media screen  and (max-width:350px){
+    .hero__inputField{
+        margin: -3rem auto 0;
+    }
+}
+
 @media screen and (max-width: 718px) {
     .hero__inputField{
         grid-template-columns: repeat(1, 1fr) !important;
         align-items: center;
         justify-content: center;
         row-gap: 0;
+        padding: 2rem;
     }
 
     input, 
@@ -438,8 +445,9 @@ select:focus{
     width: 100%;
 }
 .about__title{
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 60%;
+    padding-bottom: 1rem;
 }
 
 .about__description{
@@ -447,21 +455,76 @@ select:focus{
     line-height: 2;
     font-size: 14px;
     color: var(--cadet-gray);
+    margin-bottom: 1.5rem;
 }
 
+.about__img__container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.play__button{
+    position: absolute;
+    font-size: 2rem;
+    color: var(--green-pigment);
+    top: 50%;
+    left: 35%;
+    background: var(--white);
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.bx-play{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.btn-learn{
+    color: var(--white);
+    background: green;
+    padding: 15px 40px;
+    font-size: 14px;
+}
 
 /* media queries for about */
+
+
 @media screen and (max-width: 718px) {
     .grid{
         grid-template-columns: 1fr;
     }
 
     .about__img{
-        width: 100%;
+        width: 100% !important;
     }
 
     .about__title{
-        font-size: 1.5rem;
-        width: 90%;
+        width: 100%;
     }
+
+    .play__button{
+        top: 45%;
+        left: 40%;
+    }
+}
+
+@media screen and (max-width: 834px){
+    .about__img{
+        width: 300px;
+    }
+
+    .about__title{
+        width: 100%;
+        font-size: 1.4rem;
+        padding-bottom: 10px;
+    }
+}
+
+
+/* works */
+.works{
+    text-align: center;
 }
