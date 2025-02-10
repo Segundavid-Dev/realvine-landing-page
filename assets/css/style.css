@@ -419,3 +419,49 @@ select:focus{
         padding-top: 1rem;
     }
 }
+
+
+.grid{
+    display: grid;
+    grid-template-columns: .7fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.about__img{
+    border-radius: var(--radius-16);
+    width: 400px;
+}
+
+.about__text{
+    width: 100%;
+}
+.about__title{
+    font-size: 2rem;
+    width: 60%;
+}
+
+.about__description{
+    width: 90%;
+    line-height: 2;
+    font-size: 14px;
+    color: var(--cadet-gray);
+}
+
+
+/* media queries for about */
+@media screen and (max-width: 718px) {
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .about__img{
+        width: 100%;
+    }
+
+    .about__title{
+        font-size: 1.5rem;
+        width: 90%;
+    }
+}
