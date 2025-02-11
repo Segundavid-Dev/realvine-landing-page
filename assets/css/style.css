@@ -135,6 +135,15 @@ header{
     background-color: var(--white);
 }
 
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: var(--white);
+}
+
 .nav{
     display: flex;
     align-items: center;
@@ -1007,4 +1016,9 @@ select:focus{
         max-width: 1140px;
         margin: 0 auto;
     }
+}
+
+
+.scroll-header{
+    box-shadow: var(--shadow-2);
 }
