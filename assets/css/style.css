@@ -296,12 +296,21 @@ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     color: var(--green-pigment);
 }
 
+.search__input{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 1rem;
+}
+
 .hero__inputField{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    column-gap: 3rem;
-    padding: 2rem 3rem;
+    justify-self: center;
+    column-gap: 1rem;
+    padding: 2rem;
     width: 80%;
     margin: -5rem auto 0;
     background-color: var(--white);
@@ -309,10 +318,18 @@ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     border-radius: var(--radius-12);
 }
 
+
+.search__input,
+.select__categories,
+.select__minimun,
+.select__maximum{
+    justify-self: center;
+    align-self: center;
+}
 .search__input .form__tab{
     display: flex;
     align-items: center;
-    gap: 2rem;
+    column-gap: 1rem;
 }
 
 .form__tab .tab{
@@ -323,7 +340,6 @@ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 
 .btn-search{
     display: block;
-    margin-top: 14px;
     border-radius: var(--radius-12);
 }
 
@@ -359,14 +375,12 @@ background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 .search__input p{
     font-size: 13px;
     font-weight: var(--fw-600);
-    padding-bottom: 1rem;
-    padding-top: 1rem;
 }
 
 input{
-    padding: 20px 40px;
     font-family: var(--body-font);
     font-size: 13px;
+    outline: none;
 }
 
 
@@ -375,6 +389,7 @@ select{
     outline: none;
     border: 1px solid var(--black);     
 }
+
 
 input::placeholder{
     font-size: 13px;
@@ -412,10 +427,14 @@ select:focus{
     select,
     option,
     button{
-        width: 100%;
+        width: 100% !important;
     }
 }
 
+
+.search_box{
+    padding: 15px 40px;
+}
 
 
 @media screen and (max-width: 718px) {
@@ -1067,7 +1086,7 @@ select:focus{
 /* final media query */
 @media screen and (min-width:1120px){
     .container{
-        max-width: 1100px;
+        max-width: 1140px;
         margin: 0 auto;
     }
 }
